@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_background"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/a_01"
+            android:transitionName="@string/transition_background"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_name"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/details_image_gradient"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_background"
+            app:layout_constraintLeft_toLeftOf="@+id/iv_background"
+            app:layout_constraintRight_toRightOf="@+id/iv_background"
+            app:layout_constraintTop_toTopOf="@+id/frameLayout"
+            android:id="@+id/view"/>
+
+        <View
+            android:id="@+id/card"
+            android:layout_width="0dp"
+            android:layout_height="423dp"
+            android:layout_marginBottom="80dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/white_corners"
+            android:transitionName="@string/transition_card"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/iv_background"
+            app:layout_constraintVertical_bias="1.0"/>
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/avatar_border_details"
+            android:transitionName="@string/transition_avatar_border"
+            app:layout_constraintBottom_toTopOf="@+id/card"
+            app:layout_constraintLeft_toLeftOf="@+id/card"
+            app:layout_constraintRight_toRightOf="@+id/card"
+            app:layout_constraintTop_toTopOf="@+id/card">
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/details_avatar_border"
+                android:scaleType="centerCrop"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="16dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/details_name_color"
+            android:textSize="24sp"
+            app:font='@{"SF-UI-Display-Regular.ttf"}'
+            app:layout_constraintLeft_toLeftOf="@+id/card"
+            app:layout_constraintRight_toRightOf="@+id/card"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout"/>
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/details_info_color"
+            android:textSize="17sp"
+            app:font='@{"SF-UI-Display-Regular.ttf"}'
+            app:layout_constraintLeft_toLeftOf="@+id/card"
+            app:layout_constraintRight_toRightOf="@+id/card"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name"/>
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="16dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="2"
+            android:textColor="#9199BE"
+            android:textSize="18.4sp"
+            app:font='@{"SF-UI-Display-Semibold.ttf"}'
+            app:layout_constraintLeft_toLeftOf="@+id/card"
+            app:layout_constraintRight_toRightOf="@+id/card"
+            app:layout_constraintTop_toBottomOf="@+id/tv_info"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/details_lists_corners_bottom"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="@+id/card"
+            app:layout_constraintLeft_toLeftOf="@+id/card"
+            app:layout_constraintRight_toRightOf="@+id/card"
+            app:layout_constraintTop_toBottomOf="@+id/tv_status"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="@+id/recycler_view"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_view">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:src="@drawable/button_connect"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:alpha="0.5"
+                android:text="@string/details_connect"
+                android:textColor="@android:color/white"
+                app:font='@{"SF-UI-Display-Semibold.ttf"}'/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:onClick="onCloseClick"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="@+id/recycler_view"
+            app:layout_constraintRight_toRightOf="@+id/recycler_view"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_view">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:src="@drawable/button_close"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:alpha="0.5"
+                android:text="@string/details_close"
+                android:textColor="@android:color/white"
+                app:font='@{"SF-UI-Display-Semibold.ttf"}'/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:onClick="onDetailsClick"
+            android:orientation="vertical"
+            app:layout_constraintRight_toRightOf="@+id/recycler_view"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_view"
+            android:id="@+id/linearLayout4">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:src="@drawable/button_details"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:alpha="0.5"
+                android:text="@string/details_details"
+                android:textColor="@android:color/white"
+                app:font='@{"SF-UI-Display-Semibold.ttf"}'/>
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</layout>
