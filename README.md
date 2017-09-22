@@ -18,4 +18,10 @@ http://www.jianshu.com/p/4a77ae4cd82f
 
 預覽
 --------
-![image](https://i.imgur.com/eoNmLIS.jpg)  
+![image](https://i.imgur.com/FMWb9Gd.jpg)                                      
+
+![image](https://i.imgur.com/sudM8Kg.jpg)                                      
+
+![image](https://i.imgur.com/z1UltsN.jpg)                                      
+
+
