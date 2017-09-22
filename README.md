@@ -18,7 +18,7 @@ http://www.jianshu.com/p/4a77ae4cd82f
 
 預覽
 --------
-![image](https://i.imgur.com/FMWb9Gd.jpg)                                      
+![image](https://i.imgur.com/T3eEHxN.jpg)                                      
 
 ![image](https://i.imgur.com/sudM8Kg.jpg)                                      
 
