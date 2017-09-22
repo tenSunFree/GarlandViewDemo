@@ -10,11 +10,11 @@
 garland-view-android                                     
 https://github.com/Ramotion/garland-view-android
 
-garland-view-android                                     
-https://github.com/Ramotion/garland-view-android
+faker                                     
+https://github.com/blocoio/faker
 
-參考文章                                     
-https://juejin.im/post/593b584a128fe1006ad2ec6f
+CoordinatorLayout 相關參考文章                                     
+http://www.jianshu.com/p/4a77ae4cd82f
 
 預覽
 --------
