@@ -4,7 +4,8 @@
 
 簡介
 ==================================
-關於RecyclerView, CoordinatorLayout, AppBarLayout, CollapsingToolbarLayout..等UI控件的交互, 以及使用Faker 產生隨機數據來使用
+關於RecyclerView, CoordinatorLayout, AppBarLayout, CollapsingToolbarLayout..等UI控件的交互                                     
+以及使用Faker 產生隨機數據來使用
 
 RecycleViewDemo11                                     
 https://github.com/tenSunFree/RecycleViewDemo11
