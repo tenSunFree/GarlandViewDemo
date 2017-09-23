@@ -5,7 +5,8 @@
 簡介
 ==================================
 關於RecyclerView, CoordinatorLayout, AppBarLayout, CollapsingToolbarLayout..等UI控件的交互                                     
-以及使用Faker 產生隨機數據來使用
+以及使用Faker 產生隨機數據來使用                                     
+取材自garland-view-android 修改而成
 
 garland-view-android                                     
 https://github.com/Ramotion/garland-view-android
